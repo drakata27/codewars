@@ -1,0 +1,14 @@
+def ip_to_int32(ip):
+   binList = [] # empty list to store the binary numbers
+   intList = ip.split('.') # list that splits the ip address into four separate numbers
+   
+   for i in intList: # iterates over the list of integer values 
+      i = int(i) # converts each value from str to int
+      binList.append(format(i,'08b')) # appends the convert int value to 8bit binary
+   binNum = int(''.join(map(str,binList))) # joins the binary values to create one whole number
+   return int(str(binNum), 2) # returns the whole number convert to int from binary base 2
+
+
+print(ip_to_int32('128.32.10.1'))
+
+link = 'https://www.codewars.com/kata/52ea928a1ef5cfec800003ee/train/python'

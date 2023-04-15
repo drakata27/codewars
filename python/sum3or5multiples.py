@@ -9,6 +9,3 @@ def solution(number):
     return total
 
 print(solution(16))
-
-# def solution(number):
-#     return sum(x for x in range(number) if x % 3 == 0 or x % 5 == 0)
